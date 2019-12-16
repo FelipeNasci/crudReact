@@ -1,0 +1,53 @@
+.create-user {
+    max-width: 700px;
+    margin: 0px auto 0;
+    padding: 20px;
+  
+}
+
+.create-user form{
+
+    display: flex;
+    
+}
+
+.create-user #container-input  {
+ 
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.create-user #container-input input {
+ 
+    width: 230px;
+    background: rgb(255, 255, 255);
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 5px;
+    font-size: 16px;;
+    font-family: cursive;
+}
+
+.create-user form button {
+ 
+    width: 40px;
+    background: rgb(255, 255, 255);
+    border: 2px solid #dddddd;
+    border-radius: 100px;
+    padding: 5px;
+    margin-left: 5px;
+    font-size: 20px;
+    
+}
+
+.create-user form button:hover{
+ 
+   
+    background: rgb(48, 99, 52);
+    color: seashell;
+    
+}

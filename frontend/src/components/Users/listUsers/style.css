@@ -1,0 +1,50 @@
+.list-users {
+    max-width: 700px;
+    margin: 0px auto 0;
+    padding: 20px;
+}
+
+.list-users #container-users {
+    display: flex;
+}
+
+.list-users #container-users article {
+    width: 500px;
+    background: #ffff;
+    border: 1px solid #dddddd;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.list-users #container-users article a{
+    
+    text-decoration: none;
+    color: black;
+}
+
+.list-users #container-users #button-delete {
+    background: #ffff;
+    color: #d47e7e;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    border: 1px solid #ff9b9b;
+    border-radius: 15px;
+    padding: 15px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.list-users #container-users #button-delete:hover {
+    background: #ff9b9b;
+    color: white;
+}

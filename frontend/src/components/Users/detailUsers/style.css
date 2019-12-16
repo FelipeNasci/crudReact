@@ -1,0 +1,38 @@
+.details-user {
+    max-width: 700px;
+    font-size: 14px;
+}
+
+.details-user #container {
+    width: 300px;
+    background: rgb(185, 66, 82);
+    padding: 1px;
+    border-radius: 5px;
+}
+
+.details-user #container span h1 {
+    height: 40px;
+    background: white;
+    margin: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-user #container article {
+    color: white;
+    margin: 0 0 0 10px;
+}
+
+#button-back{
+    height: 20px;
+    width: 60px;
+    margin-top: 5px;
+    margin-left: 230px;
+    border-radius: 9px;
+    background: rgb(88, 12, 72);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
