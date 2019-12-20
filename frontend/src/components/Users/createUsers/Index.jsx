@@ -9,7 +9,8 @@ const CreateUser = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
 
-    const buttonAdd = async () => {
+    const buttonAdd = async (event) => {
+        event.preventDefault();
 
         try {
 
@@ -18,8 +19,9 @@ const CreateUser = () => {
                 email
             })
 
-            console.log(response);
+            const {error} = response.data;
             
+            if(error) alert(error);
 
         } catch (error) { console.log('deu ruim' + error) }
     }
