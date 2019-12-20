@@ -1,31 +1,24 @@
 //Botão para deletar usuário
 
-import React, { Component, useEffect } from 'react'
+import React, { useEffect } from 'react'
 
-import { Redirect } from 'react-router-dom';
-
-import api from '../../../services/api'
-import Dashboard from '../../../pages/Dashboard/Index';
+//import api from '../../../services/api'
 
 const DeleteUser = (props) => {
 
-        useEffect(() => {
+    useEffect(() => {
 
-            function f(){
-                alert('ola mundo cruel')   
-            }
-            f();
-            //props.history.push('/')
-        }, [])
-     
+        function f() {
+            alert('ola mundo cruel')
+        }
+        f();
+        //props.history.push('/')
+    }, [])
 
-    const renderRedirect = () => {
-        return (<Redirect to="/" />)
-    }
 
     const deleteUser = async () => {
         //const { id } = props.match.params;
-       // await api.delete("/user/delete/" + id);
+        // await api.delete("/user/delete/" + id);
     }
 
 

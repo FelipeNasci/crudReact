@@ -4,12 +4,13 @@ import api from '../../../services/api';
 
 import './style.css';
 
-const CreateUser = () => {
+const CreateUser = (props) => {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
 
     const buttonAdd = async (event) => {
+
         event.preventDefault();
 
         try {
@@ -19,11 +20,16 @@ const CreateUser = () => {
                 email
             })
 
-            const {error} = response.data;
-            
-            if(error) alert(error);
+            const { error } = response.data;
 
-        } catch (error) { console.log('deu ruim' + error) }
+            if (error) {
+                alert(error);
+                return;
+            }
+
+            props.update(response.data.id)
+
+        } catch (error) { console.log('Erro no Servidor' + error); }
     }
 
     return (
@@ -58,4 +64,5 @@ const CreateUser = () => {
         </div>
     );
 }
+
 export default CreateUser;
